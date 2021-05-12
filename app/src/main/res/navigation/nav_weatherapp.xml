@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_weatherapp"
+    app:startDestination="@id/main_view_pager_fragment">
+
+    <fragment
+        android:id="@+id/main_view_pager_fragment"
+        android:name="com.cst.weatherapptest.ui.main.MainViewPagerFragment"
+        tools:layout="@layout/fragment_main_view_pager">
+        <action
+            android:id="@+id/action_main_view_pager_fragment_to_settings_fragment"
+            app:destination="@id/settings_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_main_view_pager_fragment_to_location_search_fragment"
+            app:destination="@id/location_search_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_main_view_pager_fragment_to_location_details_fragment"
+            app:destination="@id/location_details_fragment"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_enter_anim"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/locations_fragment"
+        android:name="com.cst.weatherapptest.ui.locations.LocationsFragment"
+        android:label="Locations Fragment"
+        tools:layout="@layout/fragment_locations">
+        <action
+            android:id="@+id/action_locations_fragment_to_location_details_fragment"
+            app:destination="@id/location_details_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/current_location_fragment"
+        android:name="com.cst.weatherapptest.ui.currentlocation.CurrentLocationFragment"
+        android:label="Current Location Fragment"
+        tools:layout="@layout/fragment_current_location" />
+
+    <fragment
+        android:id="@+id/location_search_fragment"
+        android:name="com.cst.weatherapptest.ui.locationsearch.LocationSearchFragment"
+        android:label="Location Search Fragment"
+        tools:layout="@layout/fragment_location_search">
+        <action
+            android:id="@+id/action_location_search_fragment_to_location_details_fragment"
+            app:destination="@id/location_details_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.cst.weatherapptest.ui.settings.SettingsFragment"
+        android:label="Settings Fragment"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/location_details_fragment"
+        android:name="com.cst.weatherapptest.ui.locationdetails.LocationDetailsFragment"
+        android:label="Location Details Fragment"
+        tools:layout="@layout/fragment_location_details">
+        <argument
+            android:name="locationId"
+            app:argType="long" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WeatherAppTest" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/default_background</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#5AAEF3</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/default_background</item>
+        <!-- Customize your theme here. -->
+        <item name="colorSurface">@color/default_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="switchStyle">@style/Widget.App.Switch</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.WeatherApp.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.WeatherApp.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.WeatherApp.Large</item>
+    </style>
+
+    <style name="CustomChipChoice" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/background_color_chip_state_list</item>
+        <item name="android:textColor">@color/text_color_chip_state_list</item>
+    </style>
+
+    <style name="Theme.WeatherAppTest.TransparentDarkTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.WeatherAppTest.TransparentLightTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Widget.App.Switch" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorOnSurface">@color/medium_gray</item>
+        <item name="colorSecondary">@color/cta1</item>
+    </style>
+
+
+    <style name="ShapeAppearance.WeatherApp.Small" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/small_shape_radius</item>
+    </style>
+
+    <style name="ShapeAppearance.WeatherApp.Medium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/medium_shape_radius</item>
+    </style>
+
+    <style name="ShapeAppearance.WeatherApp.Large" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/large_shape_radius</item>
+    </style>
+
+
+</resources>

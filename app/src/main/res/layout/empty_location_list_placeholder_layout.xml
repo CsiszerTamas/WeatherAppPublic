@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/empty_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/liearlayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/empty_location_list_placeholder_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/ic_placeholder_location" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/empty_location_list_placeholder_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="48dp"
+            android:text="@string/empty_location_list_placeholder_text"
+            android:textAlignment="center"
+            android:textColor="@color/medium_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/empty_location_list_placeholder_image"
+            app:layout_constraintStart_toStartOf="@id/empty_location_list_placeholder_image"
+            app:layout_constraintTop_toBottomOf="@id/empty_location_list_placeholder_image"
+            tools:text="Please search for a location.\n\nThe search term must be at least 3 characters long." />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

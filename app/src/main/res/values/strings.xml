@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <!-- Screen titles -->
+    <string name="fragment_title_main">Weather</string>
+    <string name="fragment_title_locations">Locations</string>
+    <string name="fragment_title_current_location">Current Location</string>
+    <string name="fragment_title_location_search">Location search</string>
+    <string name="fragment_title_location_details">Location Details</string>
+    <string name="fragment_title_settings">Settings</string>
+
+    <string name="label_unit_of_measurement">Unit of Measurement</string>
+    <string name="label_auto_refresh">Auto Refresh</string>
+    <string name="label_dark_theme">Dark Theme</string>
+    <string name="search_hint_location">Search for a location</string>
+
+    <!-- Weather details labels -->
+    <string name="weather_attribute_title_humidity">Humidity:</string>
+    <string name="weather_attribute_title_feels_like">Feels like:</string>
+    <string name="weather_attribute_title_min_temperature">Min temperature:</string>
+    <string name="weather_attribute_title_max_temperature">Max temperature:</string>
+    <string name="weather_attribute_title_pressure">Pressure:</string>
+    <string name="weather_attribute_title_cloudiness">Cloudiness:</string>
+    <string name="weather_attribute_title_wind_speed">Wind speed:</string>
+    <string name="weather_attribute_title_wind_direction">Wind direction:</string>
+    <string name="weather_attribute_title_wind_gust">Wind gust:</string>
+    <string name="weather_attribute_title_visibility">Average visibility</string>
+    <string name="weather_attribute_title_rain_volume">Rain volume for last 3 hours:</string>
+    <string name="weather_attribute_title_snow_volume">Snow volume for last 3 hours:</string>
+
+    <!-- ChipGroup texts -->
+    <string name="chip_text_today">Today</string>
+    <string name="chip_text_tomorrow">Tomorrow</string>
+    <string name="chip_text_five_days">5 days</string>
+
+    <string-array name="units_array">
+        <item>°C (Celsius)</item>
+        <item>°F (Fahrenheit)</item>
+        <item>K (Kelvin)</item>
+    </string-array>
+
+    <string-array name="auto_refresh_array">
+        <item>Never</item>
+        <item>Every hour</item>
+        <item>Every 6 hour</item>
+        <item>Every 12 hour</item>
+        <item>Every 24 hour</item>
+    </string-array>
+
+    <!-- Toast messages -->
+    <string name="toast_location_added_to_favorites">Location added to favorites</string>
+    <string name="toast_location_removed_from_favorites">Location removed from favorites</string>
+    <string name="toast_locations_weather_data_updated">Weather data for saved locations updated successfully</string>
+    <string name="toast_location_details_updated">Detailed weather data for this location updated successfully</string>
+    <string name="toast_current_location_weather_data_updated">Weather data for this location updated successfully</string>
+    <string name="snackbar_app_in_offline_mode">No working network connection!\nYou are using the app in offline mode.</string>
+
+    <!-- Error messages -->
+    <string name="error_something_went_wrong">Something went wrong</string>
+
+    <string name="error_dialog_title">Oops!</string>
+    <string name="error_dialog_something_went_wrong">Sorry, something went wrong.\nPlease go back and try again.</string>
+    <string name="error_dialog_ok_button">OK</string>
+
+    <string name="error_geocoder_connectivity_exception_message">"Geocoder connectivity issue.\nPlease modify the search term to try again."</string>
+
+    <string name="error_no_internet_message">You must be connected to the network to get the latest data</string>
+    <string name="error_still_not_connected">Still not connected to the network! :(</string>
+    <string name="error_locality_not_found">Something went wrong, locality is not found</string>
+    <string name="error_address_is_not_correct">"Something went wrong, address is not correct!"</string>
+
+    <string name="placeholder_no_location_found">"No location found"</string>
+    <string name="empty_location_list_placeholder_text">Please search for a location.\nThe search term must be at least 3 characters long.</string>
+    <string name="settings_fragment_dark_mode_delete_dialog_title_text">Applying selected theme</string>
+    <string name="settings_fragment_dark_mode_delete_dialog_message_text">For applying the selected theme, the app must be restarted</string>
+    <string name="settings_fragment_dark_mode_delete_dialog_positive_button_text">OK</string>
+
+    <string name="fragment_current_location_no_internet_placeholder_text">To check your current location please have a working internet connection</string>
+    <string name="fragment_current_location_no_internet_retry_button">RETRY</string>
+    <string name="no_forecast_data_for_location">Something went wrog.\nNo forecast data for this location.</string>
+
+    <string name="fragment_locations_no_favorite_locations_yet">No locations added to the Favorites yet</string>
+    <string name="fragment_locations_search_field_hint">Search for a location</string>
+
+
+</resources>

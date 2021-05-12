@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#348AD0</color>
+    <color name="colorPrimaryDark">#2485D4</color>
+    <color name="colorAccent">#348AD0</color>
+
+    <color name="textPagerSelected">#348AD0</color>
+
+    <color name="weather_white">#ffffff</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="dark_2">#212121</color>
+
+    <color name="cta1">#348AD0</color>
+
+    <color name="light3">#e5e5ea</color>
+
+    <color name="light_gray">#f2f2f7</color>
+    <color name="light_gray_2">#D5D5D9</color>
+    <color name="medium_gray">#8e8e93</color>
+
+    <color name="loading_background">#4c000000</color>
+    <color name="chip_disabled_text_color">#d1d1d6</color>
+    <color name="favorite_icon_color">#F6D639</color>
+
+    <color name="chip_not_checked">@color/light_gray</color>
+    <color name="chip_checked_text_color">@color/white</color>
+    <color name="chip_not_checked_text_color">@color/dark_2</color>
+
+    <color name="default_background">@color/white</color>
+    <color name="statusBarColor">@color/white</color>
+
+    <color name="favorite_locations_search_field_background_color">#f2f2f7</color>
+
+    <color name="error_dialog_ok_button_color">#E53935</color>
+</resources>
